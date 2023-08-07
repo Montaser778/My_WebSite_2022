@@ -21,6 +21,28 @@
 </head>
 
 <body>
+
+    
+    <h1>Welcome to the website!</h1>
+<p>Number of visits: <span id="counter">0</span></p>
+
+<script>
+  // Retrieve the current value from the user's browser
+  let visits = localStorage.getItem('visits');
+
+  // Check if a value is stored in the browser
+  if (visits === null) {
+    visits = 1;
+  } else {
+    visits = parseInt(visits) + 1;
+  }
+
+  // Display the updated visit count and update the local storage variable
+  document.getElementById('counter').textContent = visits;
+  localStorage.setItem('visits', visits);
+</script>
+
+    
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
