@@ -515,9 +515,40 @@ section .title::after {
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus {
-  border-color: #b3b3b3;
+/* تحسين شكل الحقول بناءً على البنية المستخدمة في التنسيق الحالي */
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 17px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  margin-bottom: 15px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.contact .right form .textarea textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact .right form button {
+  background-color: #e5093f;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact .right form button:hover {
+  background-color: #c10735;
 }
 .contact .right form .textarea textarea {
   padding-top: 10px;
