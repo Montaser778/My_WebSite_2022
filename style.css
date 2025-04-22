@@ -706,3 +706,36 @@ footer span a:hover {
 .bg-danger {
   background-color: #ef4444;
 }
+
+/* === تحسين تصميم نموذج الاتصال === */
+.contact-content .column.right form input,
+.contact-content .column.right form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.contact-content .column.right form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-content .column.right form button {
+    background-color: #e5093f;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.contact-content .column.right form button:hover {
+    background-color: #c10735;
+}
